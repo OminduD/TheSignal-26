@@ -70,7 +70,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onScrollTo }) => {
           {/* Official IEEE Computer Society UCSC Host Logo in Topbar (Desktop) */}
           <div className="hidden lg:flex items-center pl-3.5 border-l border-slate-700/60 ml-1">
             <img
-              src="/images/ieee-cs-white.png"
+              src="./images/ieee-cs-white.png"
               alt="IEEE Computer Society of UCSC"
               className="h-6 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity drop-shadow-[0_0_10px_rgba(34,211,238,0.3)]"
             />
@@ -130,7 +130,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onScrollTo }) => {
           {/* Mobile Menu Host Credential Footer */}
           <div className="pt-3 mt-2 border-t border-cyan-400/20 flex items-center justify-between px-2 text-[10px] font-mono text-cyan-300/90">
             <img
-              src="/images/ieee-cs-white.png"
+              src="./images/ieee-cs-white.png"
               alt="IEEE CS UCSC"
               className="h-5 w-auto object-contain opacity-85"
             />

@@ -96,7 +96,7 @@ export const RegistrationModal: React.FC<RegistrationModalProps> = ({ isOpen, on
                   </div>
                   <div className="flex items-center space-x-2 mt-1">
                     <img
-                      src="/images/ieee-cs-white.png"
+                      src="./images/ieee-cs-white.png"
                       alt="IEEE Computer Society of UCSC"
                       className="h-4 sm:h-5 w-auto object-contain opacity-85"
                     />

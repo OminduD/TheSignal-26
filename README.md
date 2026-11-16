@@ -63,6 +63,18 @@ In the project directory, you can run:
 
 ---
 
+## Deployment
+
+A GitHub Actions workflow is included at `.github/workflows/deploy.yml` for automated deployment to GitHub Pages.
+
+To enable GitHub Pages:
+1. Go to your repository **Settings** on GitHub.
+2. Select **Pages** from the sidebar.
+3. Under **Build and deployment > Source**, choose **GitHub Actions**.
+4. Pushing commits to the `main` or `master` branch will automatically build and publish the site.
+
+---
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

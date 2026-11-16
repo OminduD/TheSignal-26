@@ -90,11 +90,11 @@ export const SeabedBranding3D: React.FC<SeabedBranding3DProps> = ({ diveRef }) =
   const spotTargetRef = useRef<THREE.Object3D>(new THREE.Object3D());
 
   // 1. Load the 3D letter models from public/models/*.glb
-  const gltfI = useGLTF('/models/i.glb');
-  const gltfE = useGLTF('/models/e.glb');
-  const gltfU = useGLTF('/models/u.glb');
-  const gltfC = useGLTF('/models/c.glb');
-  const gltfS = useGLTF('/models/s.glb');
+  const gltfI = useGLTF('./models/i.glb');
+  const gltfE = useGLTF('./models/e.glb');
+  const gltfU = useGLTF('./models/u.glb');
+  const gltfC = useGLTF('./models/c.glb');
+  const gltfS = useGLTF('./models/s.glb');
 
   const modelMap = useMemo(
     () => ({
@@ -211,8 +211,8 @@ export const SeabedBranding3D: React.FC<SeabedBranding3DProps> = ({ diveRef }) =
 };
 
 // Preload all 3D letter models immediately for zero-lag reveal
-useGLTF.preload('/models/i.glb');
-useGLTF.preload('/models/e.glb');
-useGLTF.preload('/models/u.glb');
-useGLTF.preload('/models/c.glb');
-useGLTF.preload('/models/s.glb');
+useGLTF.preload('./models/i.glb');
+useGLTF.preload('./models/e.glb');
+useGLTF.preload('./models/u.glb');
+useGLTF.preload('./models/c.glb');
+useGLTF.preload('./models/s.glb');

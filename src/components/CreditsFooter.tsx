@@ -48,7 +48,7 @@ export const CreditsFooter: React.FC<CreditsFooterProps> = ({ diveRef }) => {
           title="Visit omindu.dev"
         >
           <img
-            src="/images/logo-white.webp"
+            src="./images/logo-white.webp"
             alt="OminduD Logo"
             className="w-3.5 h-3.5 object-contain opacity-75 group-hover:opacity-100 group-hover:scale-105 transition-all"
           />

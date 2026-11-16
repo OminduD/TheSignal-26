@@ -369,7 +369,7 @@ export const Submarine3D: React.FC<{ diveRef: DiveRef }> = ({ diveRef }) => {
   const hullRoughnessMap = useMemo(() => createSubmarineRoughnessMap(), []);
 
   // Load GLTF Model
-  const gltf = useGLTF("/models/submarine.glb");
+  const gltf = useGLTF("./models/submarine.glb");
 
   // Compute auto-normalization scale & apply enhanced photorealistic materials
   const normalizedScene = useMemo(() => {
@@ -932,4 +932,4 @@ export const Submarine3D: React.FC<{ diveRef: DiveRef }> = ({ diveRef }) => {
 };
 
 // Preload GLTF model
-useGLTF.preload("/models/submarine.glb");
+useGLTF.preload("./models/submarine.glb");

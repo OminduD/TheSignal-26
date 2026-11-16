@@ -429,7 +429,7 @@ export const StorySections: React.FC<StorySectionsProps> = ({
             </div>
             <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
               <img
-                src="/images/ieee-cs-white.png"
+                src="./images/ieee-cs-white.png"
                 alt="IEEE Computer Society of UCSC"
                 className="h-9 sm:h-12 w-auto max-w-[190px] object-contain opacity-95 hover:opacity-100 transition-opacity drop-shadow-[0_0_15px_rgba(34,211,238,0.4)]"
               />
