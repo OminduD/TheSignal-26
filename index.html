@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <meta name="theme-color" content="#010204" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>THE SIGNAL // 2026 - Deep-Sea Hackathon</title>
+    <meta name="description" content="THE SIGNAL 2026 - An inter-university deep-tech hackathon engineered by the IEEE Computer Society of UCSC." />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Arimo:ital,wght@0,400..700;1,400..700&family=Geo:ital@0;1&family=Iceberg&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-[#010204] text-slate-100 selection:bg-cyan-500/30 selection:text-cyan-200 antialiased"
+  >
+    <script>
+      window.addEventListener("error", function (e) {
+        console.error("DEBUG WINDOW ERROR:", e.error || e.message);
+        var box = document.getElementById("debug-error-box");
+        if (!box) {
+          box = document.createElement("div");
+          box.id = "debug-error-box";
+          box.style.position = "fixed";
+          box.style.bottom = "12px";
+          box.style.left = "12px";
+          box.style.zIndex = "9999999";
+          box.style.background = "rgba(220, 38, 38, 0.95)";
+          box.style.color = "#fff";
+          box.style.padding = "10px 14px";
+          box.style.fontFamily = "monospace";
+          box.style.fontSize = "12px";
+          box.style.maxWidth = "90vw";
+          box.style.borderRadius = "6px";
+          box.style.boxShadow = "0 0 20px rgba(0,0,0,0.8)";
+          box.style.pointerEvents = "auto";
+          document.body.appendChild(box);
+        }
+        box.textContent =
+          "ERROR: " + (e.error ? e.error.message || e.error.stack : e.message);
+      });
+      window.addEventListener("unhandledrejection", function (e) {
+        console.error("DEBUG UNHANDLED REJECTION:", e.reason);
+      });
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
