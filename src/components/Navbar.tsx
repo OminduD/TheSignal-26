@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Globe } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { NavScrambleButton } from './ScrambleText';
 import { SignalLogo } from './SignalLogo';
 
@@ -94,7 +94,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onScrollTo }) => {
         <div className="flex md:hidden items-center">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="min-w-[44px] min-h-[44px] p-2.5 rounded-lg text-slate-300 hover:text-white border border-cyan-400/30 bg-slate-950/80 backdrop-blur-md active:bg-cyan-950/50 flex items-center justify-center transition-all shadow-[0_0_15px_rgba(6,182,212,0.15)]"
+            className="min-w-[44px] min-h-[44px] p-2.5 rounded-lg text-slate-300 hover:text-white border-none bg-transparent hover:bg-cyan-950/30 active:bg-cyan-900/40 flex items-center justify-center transition-all backdrop-blur-sm"
             aria-label={mobileMenuOpen ? 'Close Navigation Menu' : 'Open Navigation Menu'}
             aria-expanded={mobileMenuOpen}
           >
@@ -107,10 +107,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onScrollTo }) => {
         </div>
       </div>
 
-      {/* Mobile Menu Dropdown with Backdrop Blur */}
+      {/* Mobile Menu Dropdown with Transparent Backdrop Blur */}
       {mobileMenuOpen && (
-        <div className="md:hidden mt-2 mx-3 px-4 pt-3 pb-4 space-y-1 rounded-xl bg-slate-950/95 border border-cyan-400/30 backdrop-blur-2xl shadow-[0_16px_50px_rgba(0,0,0,0.9)] animate-fadeIn">
-          <div className="flex items-center space-x-2.5 pb-2.5 mb-2 border-b border-cyan-500/20 px-1">
+        <div className="md:hidden mt-2 mx-3 px-4 pt-3 pb-4 space-y-1 rounded-xl bg-slate-950/40 border-none backdrop-blur-xl shadow-[0_8px_32px_rgba(0,0,0,0.5)] animate-fadeIn">
+          <div className="flex items-center space-x-2.5 pb-2.5 mb-2 border-none px-1">
             <SignalLogo size="xs" animated={true} />
             <span className="font-mono text-xs uppercase tracking-widest text-cyan-400 font-semibold">
               EXPEDITION NAVIGATION // 2026
@@ -128,16 +128,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onScrollTo }) => {
           ))}
 
           {/* Mobile Menu Host Credential Footer */}
-          <div className="pt-3 mt-2 border-t border-cyan-400/20 flex items-center justify-between px-2 text-[10px] font-mono text-cyan-300/90">
+          <div className="pt-3 mt-2 border-none flex items-center justify-center px-2">
             <img
               src="./images/ieee-cs-white.png"
               alt="IEEE CS UCSC"
-              className="h-5 w-auto object-contain opacity-85"
+              className="h-5 w-auto object-contain opacity-85 hover:opacity-100 transition-opacity"
             />
-            <span className="flex items-center space-x-1 font-semibold">
-              <Globe className="w-3 h-3 text-cyan-400 inline-block" />
-              <span>100% ONLINE</span>
-            </span>
           </div>
         </div>
       )}

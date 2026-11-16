@@ -98,11 +98,6 @@ export const AudioToggle: React.FC<AudioToggleProps> = ({ isMuted, onToggle }) =
           {!isMuted ? (
             <div className="relative flex items-center justify-center">
               <Volume2 className="w-5 h-5 sm:w-6 sm:h-6 text-cyan-200 group-hover:text-white drop-shadow-[0_0_12px_rgba(34,211,238,0.9)] transition-all duration-300 group-hover:scale-110" />
-              {/* Active Sonar Ping Dot */}
-              <span className="absolute -top-1 -right-1 flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-300 opacity-80" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-200 shadow-[0_0_8px_#22d3ee]" />
-              </span>
             </div>
           ) : (
             <div className="relative flex items-center justify-center">

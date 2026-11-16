@@ -375,9 +375,9 @@ export const StorySections: React.FC<StorySectionsProps> = ({
       {/* ================= SECTION 4: SEABED TOUCHDOWN & ORGANIZERS (86% – 100%) ================= */}
       <div
         ref={sec4Ref}
-        className="fixed left-5 sm:left-10 md:left-16 top-1/2 -translate-y-1/2 max-w-lg w-[calc(100vw-4.5rem)] sm:w-full z-20 pointer-events-none will-change-transform select-none"
+        className="fixed left-5 sm:left-10 md:left-16 top-[max(4.5rem,calc(env(safe-area-inset-top)+3.5rem))] sm:top-1/2 sm:-translate-y-1/2 max-w-lg w-[calc(100vw-4.5rem)] sm:w-full z-20 pointer-events-none will-change-transform select-none"
       >
-        <div className="relative pl-4 sm:pl-7 border-l-2 border-cyan-400/80 bg-transparent space-y-3 sm:space-y-3.5">
+        <div className="relative pl-3.5 sm:pl-7 border-l-2 border-cyan-400/80 bg-transparent space-y-2.5 sm:space-y-3.5">
           {/* Expedition Logo Protocol Tag */}
           <div className="flex items-center space-x-2 text-[10px] sm:text-xs font-mono uppercase tracking-widest text-cyan-400">
             <SignalLogo size={20} animated={true} showPlate={false} />
@@ -391,7 +391,7 @@ export const StorySections: React.FC<StorySectionsProps> = ({
               fontWeight: 400,
               fontStyle: "normal",
             }}
-            className="archivo-black-regular text-2xl sm:text-3xl md:text-4xl text-white uppercase tracking-tight leading-tight drop-shadow-[0_4px_25px_rgba(0,0,0,0.95)]"
+            className="archivo-black-regular text-xl sm:text-3xl md:text-4xl text-white uppercase tracking-tight leading-tight drop-shadow-[0_4px_25px_rgba(0,0,0,0.95)]"
           >
             Ready Your Crew for Descent.
           </h2>
@@ -414,7 +414,7 @@ export const StorySections: React.FC<StorySectionsProps> = ({
                 fontWeight: 400,
                 fontStyle: "normal",
               }}
-              className="archivo-black-regular pointer-events-auto py-3.5 px-6 min-h-[48px] rounded-full border border-cyan-400 bg-cyan-500/25 hover:bg-cyan-500/40 active:bg-cyan-400/50 text-white text-xs sm:text-sm uppercase tracking-wider shadow-[0_0_25px_rgba(34,211,238,0.4)] transition-all flex items-center justify-center space-x-2 cursor-pointer group active:scale-95"
+              className="archivo-black-regular pointer-events-auto py-2.5 sm:py-3.5 px-5 sm:px-6 min-h-[44px] rounded-full border border-cyan-400 bg-cyan-500/25 hover:bg-cyan-500/40 active:bg-cyan-400/50 text-white text-xs sm:text-sm uppercase tracking-wider shadow-[0_0_25px_rgba(34,211,238,0.4)] transition-all flex items-center justify-center space-x-2 cursor-pointer group active:scale-95"
               aria-label="Register Crew for Hackathon"
             >
               <span>REGISTER CREW</span>
@@ -423,24 +423,24 @@ export const StorySections: React.FC<StorySectionsProps> = ({
           </div>
 
           {/* Official Organizing Host Showcase (Revealed at 95% scroll - 'Organizers' section) */}
-          <div className="pt-2.5 sm:pt-3 border-t border-cyan-400/20">
-            <div className="text-[10px] sm:text-[11px] font-mono tracking-widest text-cyan-400 uppercase font-semibold mb-2">
+          <div className="pt-2 sm:pt-3 border-t border-cyan-400/20">
+            <div className="text-[10px] sm:text-[11px] font-mono tracking-widest text-cyan-400 uppercase font-semibold mb-1.5 sm:mb-2">
               MISSION COMMAND // HOSTED &amp; ORGANIZED BY
             </div>
-            <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2.5 sm:gap-4">
               <img
                 src="./images/ieee-cs-white.png"
                 alt="IEEE Computer Society of UCSC"
-                className="h-9 sm:h-12 w-auto max-w-[190px] object-contain opacity-95 hover:opacity-100 transition-opacity drop-shadow-[0_0_15px_rgba(34,211,238,0.4)]"
+                className="h-8 sm:h-12 w-auto max-w-[170px] sm:max-w-[190px] object-contain opacity-95 hover:opacity-100 transition-opacity drop-shadow-[0_0_15px_rgba(34,211,238,0.4)]"
               />
-              <div className="font-mono text-[10px] sm:text-[11px] text-slate-300 border-l-2 sm:border-l border-cyan-400/40 pl-3 leading-snug space-y-0.5">
+              <div className="font-mono text-[10px] sm:text-[11px] text-slate-300 border-l-2 sm:border-l border-cyan-400/40 pl-2.5 sm:pl-3 leading-snug space-y-0.5">
                 <div className="text-white font-semibold tracking-wide text-xs sm:text-sm">
                   IEEE Computer Society of UCSC
                 </div>
                 <div className="text-slate-400 text-[9.5px] sm:text-[11px]">
                   University of Colombo School of Computing
                 </div>
-                <div className="text-cyan-300 text-[10px] sm:text-[10.5px] flex items-center space-x-1.5 pt-0.5">
+                <div className="text-cyan-300 text-[9.5px] sm:text-[10.5px] flex items-center space-x-1.5 pt-0.5">
                   <Globe className="w-3 h-3 text-cyan-400 flex-shrink-0" />
                   <span className="font-bold tracking-wider text-cyan-200">LOCATION: 100% ONLINE (VIRTUAL)</span>
                 </div>
